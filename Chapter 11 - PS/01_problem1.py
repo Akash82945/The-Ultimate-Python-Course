@@ -14,8 +14,12 @@ class ThreeDVector(TwoDVector):
 
     def show(self):
         print(f"The vector is {self.i}i + {self.j}j + {self.k}k")
-
-a = TwoDVector(1, 2)
+i=int(input(f"Enter 2D vector i:- ")) 
+j=int(input(f"Enter 2D vector j:- ")) 
+a = TwoDVector(i,j) 
 a.show()
-b = ThreeDVector(5, 2, 3)
+i = int(input("Enter 3D vector i component: "))
+j = int(input("Enter 3D vector j component: "))
+k = int(input("Enter 3D vector k component: "))
+b = ThreeDVector(i,j,k)
 b.show()
